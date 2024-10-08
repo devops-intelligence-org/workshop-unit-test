@@ -53,3 +53,6 @@ Azure Container App Setup
     
     DevOps Intelligence
     https://t.ly/W1i3p
+
+    Staging Enviroment
+    https://t.ly/-Gs9N
