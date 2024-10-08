@@ -46,3 +46,10 @@ El proyecteo está construido sobre una arquitectura MVC (Model-View-Controller)
 
 ### Status
 Azure Container App Setup
+
+## Tools
+    Sonar
+    https://t.ly/lR8zh
+    
+    DevOps Intelligence
+    https://t.ly/W1i3p
