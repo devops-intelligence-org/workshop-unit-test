@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡RESTville!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        p {
+            max-width: 600px;
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #48c9b0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #1abc9c;
+        }
+        .endpoints {
+            margin-top: 30px;
+        }
+        .endpoints ul {
+            list-style: none;
+            padding: 0;
+        }
+        .endpoints li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¡Bienvenidos Kyndryls a RESTville!</h1>
+    <p>Descubre el lugar donde los endpoints REST descansan, trabajan y responden tus peticiones... ¡todo sin levantar la voz! 🌴</p>
+    <p>Aquí encontrarás una serie de servicios RESTful que pueden ayudarte a hacer cosas increíbles como buscar datos o simplemente hacer ping 🏓.</p>
+
+    <div class="endpoints">
+        <h2>Conoce a nuestros Endpoints:</h2>
+        <ul>
+            <li><strong>GET /api/v1/product</strong> – Este endpoint te muestra la lista de nuestros productos financieros.</li>
+            <li><strong>GET /api/v1/product/{productCode}</strong> – ¿Buscas un producto? Solo da el Cod y nosotros lo encontraremos.</li>
+            <li><strong>GET /api/v1/ping</strong> – Un Simple ping 🏓.</li>
+        </ul>
+    </div>
+
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-name: Trigger auto deployment for workshop-devops
+name: Continuos Deployment for workshop-devops
 
 # When this action will be executed
 on:
