@@ -2,15 +2,15 @@
 ### Kyndryl Col
 
 ### Descripción
-Este proyecto expone una API Rest que permite consultar datos de algunos paises.
+Este proyecto expone una API Rest que permite consultar datos de productos financieros.
 Está diseñado para la ejecución de pipelines CI/CD en Github Action. 
 
 ### Pasos del Pipeline
 
 - Testing
-- Compilar aertefacto (.JAR)
-- Compilar y Publicar Imagen Docker (como example)
-- Desplegar en Appservice (Azure)
+- Build artifact (.JAR)
+- Build and Publish Docker Image (example)
+- Deployment on Appservice (Azure)
 
 ### Tecnologias
 
