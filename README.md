@@ -1,5 +1,11 @@
 # Proyecto de Demostración Continuous Delivery
-### Kyndryl Col
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=devops-intelligence-org_workshop-unit-test&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=devops-intelligence-org_workshop-unit-test)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=devops-intelligence-org_workshop-unit-test&metric=bugs)](https://sonarcloud.io/summary/new_code?id=devops-intelligence-org_workshop-unit-test)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=devops-intelligence-org_workshop-unit-test&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=devops-intelligence-org_workshop-unit-test)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=devops-intelligence-org_workshop-unit-test&metric=coverage)](https://sonarcloud.io/summary/new_code?id=devops-intelligence-org_workshop-unit-test)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=devops-intelligence-org_workshop-unit-test&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=devops-intelligence-org_workshop-unit-test)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=devops-intelligence-org_workshop-unit-test&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=devops-intelligence-org_workshop-unit-test)
+### Kyndryl Consult
 
 ### Descripción
 Este proyecto expone una API Rest que permite consultar datos de productos financieros.
