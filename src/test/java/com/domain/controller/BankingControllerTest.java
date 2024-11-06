@@ -36,7 +36,7 @@ class BankingControllerTest {
         mockProduct.setProductId((long) 1);
         mockProduct.setProductName("Cuenta de Ahorros");
         mockProduct.setProductLine("Ahorros");
-        Mockito.when(productRepositoryMock.findCountryByIsoCode("AH")).thenReturn(mockProduct);
+        Mockito.when(productRepositoryMock.findProductByProductCode("AH")).thenReturn(mockProduct);
 
     }
 

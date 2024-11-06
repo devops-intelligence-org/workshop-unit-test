@@ -32,11 +32,11 @@ public class BankingController {
 
     }
 
-    @GetMapping(path = "/product/{productId}")
-    public ResponseEntity<ProductResponse> getProductDetails(@PathVariable("productId") String productId) {
+    @GetMapping(path = "/product/{productCode}")
+    public ResponseEntity<ProductResponse> getProductDetails(@PathVariable("productCode") String productCode) {
         product = Optional.of(new Product());
         productResponse = new ProductResponse();
-        product = Optional.ofNullable(productRepository.findCountryByIsoCode(productId.toUpperCase()));
+        product = Optional.ofNullable(productRepository.findProductByProductCode(productCode.toUpperCase()));
 
         if (product.isPresent()) {
             productResponse.setClientName(product.get().getClientName());
