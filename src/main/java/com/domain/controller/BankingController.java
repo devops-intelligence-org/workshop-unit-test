@@ -4,6 +4,7 @@ package com.domain.controller;
 import java.util.Optional;
 import java.io.IOException;
 import java.net.UnknownHostException;
+import java.time.Period;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -50,6 +51,12 @@ public class BankingController {
             productResponse.setProductName(product.get().getProductName());
             productResponse.setProductLine(product.get().getProductLine());
             productResponse.setIssueDate(product.get().getIssueDate());
+
+            Period period = diferenciaEntreFechas.calculateYearsOfIssue(product.get().getIssueDate());  
+            productResponse.setDaysOfIssue(period.getDays());
+            productResponse.setMonthsOfIssue(period.getMonths());
+            productResponse.setYearsOfIssue(period.getYears());
+
   
         }
         return ResponseEntity.ok(productResponse);
