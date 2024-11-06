@@ -16,7 +16,7 @@ on:
 jobs:
   
   sonarcloud:
-    name: Build and analyze
+    name: Analyze and Test with Sonar
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,8 +45,9 @@ jobs:
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=devops-intelligence-org_workshop-unit-test
 
   build:
+    name: Continuous Integration
+    needs: sonarcloud
     runs-on: ubuntu-latest
-
     steps:
     - name: Check out the repository
       uses: actions/checkout@v2
@@ -97,6 +98,8 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/workshop-unit-test:latest
   deploy:
+    name: Continuos Deployment
+    needs: build
     runs-on: ubuntu-latest
     permissions: 
       id-token: write #This is required for requesting the OIDC JWT Token
