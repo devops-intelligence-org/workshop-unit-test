@@ -12,13 +12,13 @@ import java.util.GregorianCalendar;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DiferenciaEntreFechasTest {
+class DiferenciaEntreFechasTest {
 
     @Autowired
     public DiferenciaEntreFechas diferenciaEntreFechas;
 
     @Test
-    void calculateYearsOfIndependency() {
+    void calculateIssueYears() {
         diferenciaEntreFechas = new DiferenciaEntreFechas();
 
         LocalDate currentDate  = LocalDate.now();

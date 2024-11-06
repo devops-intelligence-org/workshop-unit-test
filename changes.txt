@@ -1,0 +1,28 @@
+BankingController
+
+          import java.time.Period;
+          /*
+            Period period = diferenciaEntreFechas.calculateYearsOfIndependency(product.get().getIssueDate());  
+            productResponse.setDayssOfIndependency(period.getDays());
+            productResponse.setMonthsOfIndependency(period.getMonths());
+            productResponse.setYearsOfIndependency(period.getYears());
+            */
+productResponse
+
+    /* 
+    public int yearsOfIndependency;
+    public int monthsOfIndependency;
+    public int dayssOfIndependency;
+    */
+
+        /* 
+    public void setYearsOfIndependency(int yearsOfIndependency) {
+        this.yearsOfIndependency = yearsOfIndependency;
+    }
+    public void setMonthsOfIndependency(int monthsOfIndependency) {
+        this.monthsOfIndependency = monthsOfIndependency;
+    }
+    public void setDayssOfIndependency(int dayssOfIndependency) {
+        this.dayssOfIndependency = dayssOfIndependency;
+    }
+    */
