@@ -17,7 +17,7 @@ Logger logger = LoggerFactory.getLogger(Ping.class);
 	if (geek.isReachable(5000)) 
 	message+=": Host is reachable"; 
 	else
-	message+=": I'm really sorry! We can't reach to this host"; 
+	message+=": We really sorry! We can't reach to this host"; 
     logger.info(message);
     return message;
 } 
