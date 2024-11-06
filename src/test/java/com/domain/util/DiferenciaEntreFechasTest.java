@@ -39,7 +39,6 @@ class DiferenciaEntreFechasTest {
         Date date = new Date(2023, Calendar.DECEMBER, 20);
         Date yesterdayDate = new Date(date.getTime() - 24 * 60 * 60 * 1000);
         Date expectedYesterdayDate = new Date(2023, Calendar.DECEMBER, 19);
-
         assertEquals(expectedYesterdayDate, yesterdayDate);
     }
 
@@ -48,7 +47,6 @@ class DiferenciaEntreFechasTest {
         LocalDate localDate = LocalDate.of(2023, 12, 20);
         LocalDate yesterdayDate = localDate.minusDays(1);
         LocalDate expectedYesterdayDate = LocalDate.of(2023, 12, 19);
-
         assertEquals(expectedYesterdayDate, yesterdayDate);
     }
 
@@ -57,7 +55,6 @@ class DiferenciaEntreFechasTest {
         Calendar date = new GregorianCalendar(2023, Calendar.APRIL, 20, 4, 0);
         date.add(Calendar.DATE, -1);
         Calendar expectedYesterdayDate = new GregorianCalendar(2023, Calendar.APRIL, 19, 4, 0);
-
         assertEquals(expectedYesterdayDate, date);
     }
 
