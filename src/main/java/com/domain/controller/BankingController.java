@@ -55,9 +55,8 @@ public class BankingController {
         return ResponseEntity.ok(productResponse);
     }
 
-    @GetMapping(path = "/ping")
-    public String pingResponse() throws UnknownHostException, IOException {
-       String host = "kyndryl.com"; 
+    @GetMapping(path = "/ping/{host}")
+    public String pingResponse(@PathVariable("host") String host) throws IOException {
        return ping.sendPingRequest(host); 
     }
 
