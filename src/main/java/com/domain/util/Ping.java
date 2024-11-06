@@ -15,7 +15,7 @@ Logger logger = LoggerFactory.getLogger(Ping.class);
     String message;
     message ="Sent Ping Request to " + ipAddress;
 	if (geek.isReachable(5000)) 
-	message+=": Host is reachable"; 
+	message+=": Hurray! host is reachable"; 
 	else
 	message+=": We really sorry! We can't reach to this host"; 
     logger.info(message);
