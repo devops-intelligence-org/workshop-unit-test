@@ -8,8 +8,8 @@ import java.time.format.DateTimeFormatter;
 
 @Component
 public class DiferenciaEntreFechas {
-
-    public Period calculateYearsOfIndependency(String independenceDay) {
+    
+    public Period calculateYearsOfIssue(String independenceDay) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
         LocalDate localDate = LocalDate.parse(independenceDay, formatter);
         LocalDate today = LocalDate.now();

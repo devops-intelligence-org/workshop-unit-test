@@ -5,6 +5,9 @@ public class ProductResponse {
     public String productLine;
     public String productIssueDate;
     public String clientName;
+    public int yearsOfIssue;
+    public int monthsOfIssue;
+    public int daysOfIssue;
 
     public String getProductName() {
         return productName;
@@ -21,6 +24,17 @@ public class ProductResponse {
     }
     public void setClientName(String clientName) {
         this.clientName = clientName;
+    }
+
+
+    public void setYearsOfIssue(int yearsOfIssue) {
+        this.yearsOfIssue = yearsOfIssue;
+    }
+    public void setMonthsOfIssue(int monthsOfIssue) {
+        this.monthsOfIssue = monthsOfIssue;
+    }
+    public void setDaysOfIssue(int daysOfIssue) {
+        this.daysOfIssue = daysOfIssue;
     }
 
 }

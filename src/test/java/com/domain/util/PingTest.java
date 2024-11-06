@@ -17,9 +17,8 @@ public class PingTest {
 
     @Test
     void testSendPingRequest() throws IOException {
-        String respuestaPing;
-        String message="Host is reachable"; 
-        respuestaPing = ping.sendPingRequest("google.com");
+        String message ="Sent Ping Request to google.com: Host is reachable"; 
+        String respuestaPing = ping.sendPingRequest("google.com");
         Assertions.assertEquals(message, respuestaPing);
     }
 }

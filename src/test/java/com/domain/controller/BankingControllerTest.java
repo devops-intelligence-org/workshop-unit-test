@@ -4,13 +4,23 @@ import com.domain.models.Product;
 import com.domain.models.ProductResponse;
 import com.domain.repositories.ProductRepository;
 import com.domain.util.DiferenciaEntreFechas;
+import com.domain.util.Ping;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.io.IOException;
 import java.util.Optional;
 
 class BankingControllerTest {
@@ -39,6 +49,7 @@ class BankingControllerTest {
         Mockito.when(productRepositoryMock.findProductByProductCode("AH")).thenReturn(mockProduct);
 
     }
+    
 
     @Test
     void obtenerDetalleProductoConCodigoValido() {
