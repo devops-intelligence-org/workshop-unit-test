@@ -19,6 +19,7 @@ target/
 *.iml
 *.ipr
 *.mvn
+*.txt
 mvnw
 mvnw.cmd
 

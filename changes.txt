@@ -2,28 +2,28 @@ BankingController
 
           import java.time.Period;
           /*
-            Period period = diferenciaEntreFechas.calculateYearsOfIndependency(product.get().getIssueDate());  
-            productResponse.setDayssOfIndependency(period.getDays());
-            productResponse.setMonthsOfIndependency(period.getMonths());
-            productResponse.setYearsOfIndependency(period.getYears());
+            Period period = diferenciaEntreFechas.calculateYearsOfIssue(product.get().getIssueDate());  
+            productResponse.setDayssOfIssue(period.getDays());
+            productResponse.setMonthsOfIssue(period.getMonths());
+            productResponse.setYearsOfIssue(period.getYears());
             */
 productResponse
 
     /* 
-    public int yearsOfIndependency;
-    public int monthsOfIndependency;
-    public int dayssOfIndependency;
+    public int yearsOfIssue;
+    public int monthsOfIssue;
+    public int daysOfIssue;
     */
 
         /* 
-    public void setYearsOfIndependency(int yearsOfIndependency) {
-        this.yearsOfIndependency = yearsOfIndependency;
+    public void setYearsOfIssue(int yearsOfIssue) {
+        this.yearsOfIssue = yearsOfIssue;
     }
-    public void setMonthsOfIndependency(int monthsOfIndependency) {
-        this.monthsOfIndependency = monthsOfIndependency;
+    public void setMonthsOfIssue(int monthsOfIssue) {
+        this.monthsOfIssue = monthsOfIssue;
     }
-    public void setDayssOfIndependency(int dayssOfIndependency) {
-        this.dayssOfIndependency = dayssOfIndependency;
+    public void setDayssOfIssue(int daysOfIssue) {
+        this.daysOfIssue = daysOfIssue;
     }
     */
 

@@ -8,7 +8,7 @@
 ### Kyndryl Consult
 
 ### Descripción
-Este proyecto expone una API Rest que permite consultar datos de productos financieros.
+Este proyecto es una demostración de prácticas DevOps como Unit Test, SAST, CI y CD sobre un microservicio el cual expone una API Rest que permite consultar datos de productos financieros.
 Está diseñado para la ejecución de pipelines CI/CD en Github Action. 
 
 ### Pasos del Pipeline
@@ -16,7 +16,7 @@ Está diseñado para la ejecución de pipelines CI/CD en Github Action.
 - Testing
 - Build artifact (.JAR)
 - Build and Publish Docker Image (example)
-- Deployment on Appservice (Azure)
+- Deployment on Container App Service (Azure)
 
 ### Tecnologias
 
@@ -26,7 +26,7 @@ Está diseñado para la ejecución de pipelines CI/CD en Github Action.
 - JaCoCo 0.8.5
 - Docker
 - Github actions
-- Azure Spring Apps
+- Azure Container Apps
 
 ### Arquitectura
 El proyecteo está construido sobre una arquitectura MVC (Model-View-Controller)
