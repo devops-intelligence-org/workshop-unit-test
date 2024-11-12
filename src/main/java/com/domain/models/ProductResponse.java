@@ -2,6 +2,7 @@ package com.domain.models;
 
 public class ProductResponse {
     private String productName;
+    private Long productId;
     public String productLine;
     public String productIssueDate;
     public String clientName;
@@ -9,6 +10,14 @@ public class ProductResponse {
     public int monthsOfIssue;
     public int daysOfIssue;
 
+    public Long getProductId() {
+        return productId;
+    }
+
+    public void setProductId(Long productId){
+        this.productId=productId;
+    }
+    
     public String getProductName() {
         return productName;
     }

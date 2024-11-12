@@ -9,12 +9,12 @@ public class Ping {
 
 Logger logger = LoggerFactory.getLogger(Ping.class);
 
-    public String sendPingRequest(String ipAddress) throws IOException 
+    public String sendPingRequest(String host) throws IOException 
 { 
-	InetAddress geek = InetAddress.getByName(ipAddress); 
+	InetAddress inetAddress = InetAddress.getByName(host); 
     String message;
-    message ="Sent Ping Request to " + ipAddress;
-	if (geek.isReachable(5000)) 
+    message ="Sent Ping Request to " + host;
+	if (inetAddress.isReachable(5000)) 
 	message+=": Hurray! host is reachable"; 
 	else
 	message+=": We really sorry! We can't reach to this host"; 

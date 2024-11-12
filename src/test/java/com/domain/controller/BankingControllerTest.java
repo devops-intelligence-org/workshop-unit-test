@@ -66,4 +66,18 @@ class BankingControllerTest {
     }
 
 
+    @Test
+    void testGetProductDetailsById() {
+        ResponseEntity<ProductResponse> respuestaServicio;
+        respuestaServicio = bankingController.getProductDetailsById((long) 1);
+        Assertions.assertEquals(null,respuestaServicio.getBody().getProductName());
+    }
+
+    @Test
+    void testResponseGetProductDetailsById() {
+        ResponseEntity<ProductResponse> respuestaServicio;
+        respuestaServicio = bankingController.getProductDetailsById((long) 1);
+        Assertions.assertEquals(200,respuestaServicio.getStatusCode().value());
+    }
+
 }

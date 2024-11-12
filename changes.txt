@@ -28,7 +28,7 @@ productResponse
     */
 
 Test Ping
-@Mock
+    @Mock
     private Ping pingService;
 
     @InjectMocks
@@ -54,3 +54,10 @@ Test Ping
         verify(pingService).sendPingRequest(host);
         
     }
+#Docker
+
+docker buildx build --push --platform linux/amd64 -t noriegadocker/workshop-unit-test -f Dockerfile .
+docker inspect noriegadocker/workshop-unit-test | grep Architecture
+docker run -it noriegadocker/workshop-unit-test /bin/bash
+docker run -d -p 80:80 noriegadocker/workshop-unit-test
+docker manifest inspect noriegadocker/workshop-unit-test:latest
