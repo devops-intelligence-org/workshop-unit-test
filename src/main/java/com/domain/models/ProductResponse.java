@@ -1,8 +1,8 @@
 package com.domain.models;
 
 public class ProductResponse {
-    private String productName;
-    private Long productId;
+    public String productName;
+    public Long productId;
     public String productLine;
     public String productIssueDate;
     public String clientName;
@@ -21,8 +21,28 @@ public class ProductResponse {
     public String getProductName() {
         return productName;
     }
+    
+     public String getProductLine() {
+        return productLine;
+    }
 
-     public void setProductName(String productName) {
+    public String getProductIssueDate() {
+        return productIssueDate;
+    }
+
+    public int getYearsOfIssue() {
+        return yearsOfIssue;
+    }
+
+    public int getMonthsOfIssue() {
+        return monthsOfIssue;
+    }
+
+    public int getDaysOfIssue() {
+        return daysOfIssue;
+    }
+
+    public void setProductName(String productName) {
         this.productName = productName;
     }
     public void setProductLine(String productLine) {
@@ -44,6 +64,11 @@ public class ProductResponse {
     }
     public void setDaysOfIssue(int daysOfIssue) {
         this.daysOfIssue = daysOfIssue;
+    }
+
+    public Object getClientName() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getClientName'");
     }
 
 }

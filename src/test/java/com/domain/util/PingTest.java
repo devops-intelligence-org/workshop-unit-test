@@ -36,4 +36,11 @@ class PingTest {
         Assertions.assertNotNull(message, respuestaPing);
     }
 
+    @Test
+    void testSendPingRequestNull() throws IOException {
+        String message ="Sent Ping Request to 0.0.0.0: We really sorry! We can't reach to this host"; 
+        String respuestaPing = ping.sendPingRequest("0.0.0.0");
+        Assertions.assertEquals(message, respuestaPing);
+    }
+
 }
