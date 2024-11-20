@@ -42,6 +42,10 @@ public class ProductResponse {
         return daysOfIssue;
     }
 
+    public String getClientName() {
+        return clientName;
+    }
+
     public void setProductName(String productName) {
         this.productName = productName;
     }
@@ -66,9 +70,6 @@ public class ProductResponse {
         this.daysOfIssue = daysOfIssue;
     }
 
-    public Object getClientName() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getClientName'");
-    }
+
 
 }
