@@ -118,5 +118,5 @@ jobs:
         with:
           containerAppName: workshop-app-container
           resourceGroup: workshop-rg
-          imageToDeploy: hub.docker.com/noriegadocker/workshop-unit-test:latest
+          imageToDeploy: docker.io/noriegadocker/workshop-unit-test:latest
 
