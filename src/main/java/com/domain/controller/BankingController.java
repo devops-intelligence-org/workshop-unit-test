@@ -45,7 +45,7 @@ public class BankingController {
 
     }
 
-    @GetMapping(path = "/product/code/{productCode}")
+    @GetMapping(path = "/product/{productCode}")
     public ResponseEntity<ProductResponse> getProductDetails(@PathVariable("productCode") String productCode) {
         product = Optional.of(new Product());
         productResponse = new ProductResponse();

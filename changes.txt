@@ -61,3 +61,4 @@ docker inspect noriegadocker/workshop-unit-test | grep Architecture
 docker run -it noriegadocker/workshop-unit-test /bin/bash
 docker run -d -p 80:80 noriegadocker/workshop-unit-test
 docker manifest inspect noriegadocker/workshop-unit-test:latest
+docker-compose up --scale worker=4

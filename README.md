@@ -50,6 +50,9 @@ El proyecteo está construido sobre una arquitectura MVC (Model-View-Controller)
 ## Local deploy
     mvn spring-boot:run
 
+## Load Testing
+    docker-compose up --scale worker=4
+
 ### Status
 Azure Container App Setup
 
